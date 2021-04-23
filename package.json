@@ -26,6 +26,12 @@
     "parcel-bundler": "^1.12.4",
     "prettier": "^2.1.2"
   },
+  "browserslist": [
+    ">10%",
+    "chrome 76",
+    "not dead",
+    "not op_mini all"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/TituxMetal/react-movies"
