@@ -9,7 +9,7 @@ const MoviesList = ({ movies }) => (
       <Movie
         key={movie.id}
         title={movie.title}
-        releaseDate={movie.release}
+        releaseDate={movie.releaseDate}
         openingText={movie.openingText}
       />
     ))}
