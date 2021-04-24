@@ -21,7 +21,13 @@ const App = () => {
           `Something went wrong! Status: ${response.status} Message: ${response.statusText}`
         )
       }
+
       const data = await response.json()
+
+      if (!data) {
+        throw new Error('No movies found')
+      }
+
       const loadedData = Object.entries(data).map(([id, obj]) => ({
         id,
         ...obj
